@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coordinate 실습</title>
+
+  <style>
+    * {
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* .coordinate {
+      border: 1px solid white;
+      height: 1000px;
+      cursor: pointer;
+    } */
+    
+div {
+  border: 1px solid white;
+      height: 1000px;
+      cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <div class="coordinate"></div>
+
+  <script>
+    // const coordinate = document.querySelector('.coordinate')
+    const coordinate = document.querySelector('div')
+    coordinate.addEventListener('mousemove', function (event) {
+      console.log('event', event)
+      const tsn = coordinate.getBoundingClientRect()
+      coordinate.textContent = `clientX: ${event.clientX}, clientY: ${event.clientY}`
+    })
+  </script>
+</body>
+</html>
