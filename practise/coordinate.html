@@ -33,9 +33,10 @@ div {
     // const coordinate = document.querySelector('.coordinate')
     const coordinate = document.querySelector('div')
     coordinate.addEventListener('mousemove', function (event) {
-      console.log('event', event)
+      // console.log(event)
       const tsn = coordinate.getBoundingClientRect()
       coordinate.textContent = `clientX: ${event.clientX}, clientY: ${event.clientY}`
+      // getBoundingClientRect() => 메서드는 엘리먼트의 크기와 뷰포트에 상대적인 위치 정보를 제공하는 DOMRect 객체를 반환합니다.
     })
   </script>
 </body>
