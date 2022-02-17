@@ -6,6 +6,9 @@ window.onload = () => {
 }
 ```
 
+GlobalEventHandlers.onload
+load 이벤트는 지정된 리소스가 로드되면 발생한다
+
 # canvas
 
 Canvas API는 JavaScript와 HTML `<canvas>` 엘리먼트를 통해 그래픽을 그리기위한 수단을 제공한다
@@ -45,6 +48,11 @@ window.onresize 속성(어트리뷰트)을 사용하거나,window.addEventListen
 
 arc(x, y, radius, startAngle, endAngle, anticlockwise)
 (x, y) 위치에 원점을 두면서, 반지름 r을 가지고, startAngle 에서 시작하여 endAngle 에서 끝나며 주어진 anticlockwise 방향으로 향하는 (기본값은 시계방향 회전) 호를 그리게 된다
+
+# requestAnimationFrame
+
+window.requestAnimationFrame()은 브라우저에게 수행하기를 원하는 애니메이션을 알리고 다음 리페인트가 진행되기 전에 해당 애니메이션을 업데이트하는 함수를 호출하게 한다
+이 메소드는 리페인트 이전에 실행할 콜백을 인자로 받는다
 
 [MDN canvas](https://developer.mozilla.org/ko/docs/Web/API/Canvas_API)
 [캔버스(canvas)를 이용한 도형 그리기](https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#arcs)
