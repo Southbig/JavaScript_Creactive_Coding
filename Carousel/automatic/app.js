@@ -16,12 +16,12 @@ function slide() {
 
     // 기존에 showing 클래스를 가지고 있던 요소의 다음 형제 요소가 존재한다면 해당 요소를, 존재하지 않는다면 null을 반환한다
     // showing을 가지고 있던 요소가 마지막 노드였다면 null을, 마지막 노드가 아니라면 기존 요소의 다음 형제 노드를 반환
-    const nexSlide = currentSlide.nextElementSibling
+    const nextSlide = currentSlide.nextElementSibling
 
     // 다음 형제 노드가 존재한다면
-    if (nexSlide) {
+    if (nextSlide) {
       // 그 노드에 showing 클래스를 추가
-      nexSlide.classList.add(`${SHOWING_CLASS}`)
+      nextSlide.classList.add(`${SHOWING_CLASS}`)
     }
     // 기존 노드가 마지막 노드여서 null을 반환 한다면
     else {
