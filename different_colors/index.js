@@ -10,6 +10,8 @@ class App {
     this.frameRequestHandle = window.requestAnimationFrame(this.frameRequest);
     document.body.appendChild(this.canvas)
 
+    this.canvas.style = 'width: 50%;'
+
 
     this.shapes = []
 
