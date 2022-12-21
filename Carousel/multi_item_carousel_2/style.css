@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 602px;
+  height: 202px;
+  border: 0.1px solid black;
+  display: flex;
+}
+
+.item {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: beige;
+  text-align: center;
+  line-height: 200px;
+  border: 0.1px solid darkblue;
+  opacity: 0;
+  z-index: 10;
+  display: none;
+}
+
+.showing {
+  display: inline-block;
+  z-index: 1;
+  opacity: 1;
+}
+
+.nextDelete {
+  transform: translateX(-200px);
+  z-index: 10;
+  opacity: 0;
+  font-size: 0;
+}
+
+.prevShowing {
+  z-index: 1;
+  opacity: 1;
+  transform: translateX(200px);
+}
